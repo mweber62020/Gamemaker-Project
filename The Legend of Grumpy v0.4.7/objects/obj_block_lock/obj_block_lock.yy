@@ -35,5 +35,5 @@
     "path":"sprites/spr_lockBlock/spr_lockBlock.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

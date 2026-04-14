@@ -1,16 +1,15 @@
 myState = npcState.itemWanted;
 arrayIndexOfMyItem = 0;
-numNeeded = 3;
+numNeeded = 5;
 currentLine = 1;
 // [npcState][line]
-npcText[npcState.itemWanted][0] = "But what if the text to show is really long, like this one? What will happen then I wonder.";
-npcText[npcState.itemWanted][1] = "What's that? I have more to say? Cool.";
-npcText[npcState.itemWanted][2] = "Woah! Another line of text!";
-npcText[npcState.itemWanted][3] = "Here's a fourth.";
+npcText[npcState.itemWanted][0] = "Hello. I see you have found your way here. My name is Bob 1";
+npcText[npcState.itemWanted][1] = "I'm gonna need your help with something. All my swords ran off.";
+npcText[npcState.itemWanted][2] = "Would you mind chasing them down for me? I need at least 5 of them back. Thanks man.";
 
-npcText[npcState.itemGiven][0] = "Wow, I really needed this. Here, take this.";
-npcText[npcState.itemGiven][1] = "I don't need anything else, thank you.";
-npcText[npcState.itemGiven][2] = "I said scram.";
+npcText[npcState.itemGiven][0] = "Wow, I really needed this. I didn't think you would actually find them";
+npcText[npcState.itemGiven][1] = "Here, take this for your troubles, im sure you can find a better use for it.";
+npcText[npcState.itemGiven][2] = "If you see anything unusual around here, be sure to check it out.";
 
 /*
 for (i = 0; i <array_length(npcText); i++)

@@ -45,7 +45,7 @@ if (addText)
 	{
 		global.playerControl = false;
 		var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
-		iii.textToShow = $"You put the notes together. There is something writen across the back!: COLLECTORSANXIETY.COM or some hint about a hidden switch, idk.";
+		iii.textToShow = $"You put the notes together. There is something writen across the back!: Purple flowers near the wall.";
 		secretNoteText = false;
 		addText = false;
 	}

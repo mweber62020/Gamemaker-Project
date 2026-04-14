@@ -37,6 +37,7 @@ function scr_plates(nearbyPlate)
 			// And more such as open door (check for what room im in if the pp's do multiple things).
 			global.pplateSuccess = true;
 			show_debug_message("global.pplateSuccess is true!");
+			audio_play_sound(snd_success,1,0);
 		} else {
 			obj_player.pp_flag = true;
 		}

@@ -21,6 +21,7 @@ if ((x == rockDestX) && (y == rockDestY))
 	if (global.rockSuccess)
 	{
 	show_debug_message("global.rockSuccess is true!");
+	audio_play_sound(snd_success,1,0);
 	}
 	
 	return;

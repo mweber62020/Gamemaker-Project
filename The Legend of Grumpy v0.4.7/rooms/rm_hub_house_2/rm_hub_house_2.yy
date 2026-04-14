@@ -14,6 +14,7 @@
     {"name":"inst_74197EFA","path":"rooms/rm_hub_house_2/rm_hub_house_2.yy",},
     {"name":"inst_4C4293C1","path":"rooms/rm_hub_house_2/rm_hub_house_2.yy",},
     {"name":"inst_77148A0","path":"rooms/rm_hub_house_2/rm_hub_house_2.yy",},
+    {"name":"inst_3A174F16","path":"rooms/rm_hub_house_2/rm_hub_house_2.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -27,6 +28,7 @@
         {"$GMRInstance":"v4","%Name":"inst_74197EFA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_74197EFA","objectId":{"name":"obj_block_32x32","path":"objects/obj_block_32x32/obj_block_32x32.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":3.0,"scaleY":1.0,"x":48.0,"y":278.0,},
         {"$GMRInstance":"v4","%Name":"inst_4C4293C1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4C4293C1","objectId":{"name":"obj_block_32x32","path":"objects/obj_block_32x32/obj_block_32x32.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":208.0,"y":117.0,},
         {"$GMRInstance":"v4","%Name":"inst_77148A0","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_77148A0","objectId":{"name":"obj_block_32x32","path":"objects/obj_block_32x32/obj_block_32x32.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":0.8125,"x":80.0,"y":149.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3A174F16","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3A174F16","objectId":{"name":"obj_note","path":"objects/obj_note/obj_note.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":160.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Furniture","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Furniture","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":18,"SerialiseWidth":20,"TileCompressedData":[
           -133,-2147483648,2,440,441,-10,-2147483648,5,490,491,-2147483648,1448,1449,-3,-2147483648,2,504,505,
