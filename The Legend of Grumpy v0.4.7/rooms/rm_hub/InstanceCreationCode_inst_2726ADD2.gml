@@ -1,0 +1,2 @@
+itemHeld = "sword";
+isLocked = true;

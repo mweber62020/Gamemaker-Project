@@ -1,0 +1,1 @@
+contents = "Ship Log - Day 31: I am the last one. The radio has been silent for 6 days. I have accepted my fate. If anyone finds this, don't go through Grumpy's land. It's a death zone.";

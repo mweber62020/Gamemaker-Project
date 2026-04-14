@@ -1,0 +1,1 @@
+contents = "Ship Log - Day 12: We have made an error. The cargo hold is compromised and we lost air pressure. I have sealed it. Bob 4 did not make it in time. We do not speak of Bob 4.";
