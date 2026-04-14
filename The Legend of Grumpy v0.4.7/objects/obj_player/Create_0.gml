@@ -20,6 +20,7 @@ nearbyNPC = noone;
 nearbySign = noone;
 nearbyHswitch = noone;
 nearbyRock = noone;
+nearbyLock = noone;
 lookRangeSmall = 3.5;
 lookRange = 10;
 

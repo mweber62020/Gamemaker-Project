@@ -1,4 +1,4 @@
-/// @description Interact this is a test
+/// @description Interact
 
 // Removes any existing textbox.
 if (!nearbyNPC)

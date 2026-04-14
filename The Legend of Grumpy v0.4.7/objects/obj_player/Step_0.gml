@@ -106,6 +106,8 @@ nearbyNPC = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,
 nearbySign = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,obj_sign,false,true);
 nearbyRock = collision_point(x + velocityX,y + velocityY,obj_rock,false,true); // Checks velocity instead of look range to ensure player is walking *into* the rock, not nearby.
 nearbyHswitch = collision_rectangle(x-lookRange,y-lookRange,x+lookRange,y+lookRange,obj_switchHidden,false,true);
+nearbyLock = collision_point(x + velocityX,y + velocityY,obj_block_lock,false,true);
+
 
 // Handles all ways to request a teleport.
 if (collision_point(x+velocityX, y, obj_par_tpBlock, true, true) ||
@@ -179,6 +181,25 @@ if (nearbyRock)
 	scr_moveRock();
 }
 
+// Check for lock block
+if (nearbyLock && global.playerControl) // Prevent textbox spam
+{
+	// No key
+	if (global.item_array[3] <= 0)
+	{
+		var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
+		iii.textToShow = "The door is locked. You need a key.";
+	}
+	else // Yes key
+	{
+		var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
+		iii.textToShow = "You used a key and unlocked the door.";
+		global.item_array[3] -= 1;
+		//global.door_unlocked[nearbyLock.doorID] = true;
+		instance_destroy(nearbyLock);
+	}
+
+}
 
 // Resets plates.
 if (pp_flag)
