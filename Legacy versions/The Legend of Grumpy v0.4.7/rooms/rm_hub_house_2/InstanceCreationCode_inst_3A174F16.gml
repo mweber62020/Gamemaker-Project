@@ -1,0 +1,1 @@
+contents = "Ship Log - Day 19: Supplies are critically low. Bob 6 refused his share and gave it to the group. He said he was fine. He was not fine. We do not speak of Bob 6.";

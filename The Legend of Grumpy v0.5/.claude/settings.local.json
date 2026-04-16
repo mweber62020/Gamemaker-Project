@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(find \"C:\\\\Users\\\\grump\\\\Gamemaker-Project\\\\The Legend of Grumpy v0.5\" -name \"*.gml\" -exec grep -l \"view_\\\\|camera_\\\\|gui_\" {} \\\\;)",
+      "Bash(grep -l \"alreadyGave\\\\|gaveItem\\\\|itemToGive\" \"C:/Users/grump/Gamemaker-Project/The Legend of Grumpy v0.5/objects/obj_npcBob1/\"* \"C:/Users/grump/Gamemaker-Project/The Legend of Grumpy v0.5/objects/obj_npcBob2/\"* \"C:/Users/grump/Gamemaker-Project/The Legend of Grumpy v0.5/objects/obj_npcBob3/\"*)"
+    ]
+  }
+}

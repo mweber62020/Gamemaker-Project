@@ -1,0 +1,2 @@
+isLocked = true;
+specialChest = true;
