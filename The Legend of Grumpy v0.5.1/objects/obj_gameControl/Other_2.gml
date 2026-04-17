@@ -6,11 +6,13 @@ global.gameOver = false;
 global.gameStart = false;
 global.inConvo = false;
 global.plateIteration = 0
+// If adding end condition, dont forget to add it to bob3 step event and hint text
 global.leverSuccess = false;
 global.pplateSuccess = false;
 global.hswitchSuccess = false;
 global.npcSuccess = false;
 global.rockSuccess = false;
+global.pedestalSuccess = false;
 
 // Item array
 var i = 0;
@@ -19,8 +21,9 @@ repeat(10)// change this for size of array (num items)
     global.item_array[i] = 0;
     i += 1;
 }
-global.item_names = ["sword", "berries", "piece of a key", "key", "special key", "note"];
-// Item indexes: 0=sword, 1=berries, 2=keyPiece, 3=key, 4=special key, 5=note
+// If adding item, dont forget to put it in the inventory!
+global.item_names = ["sword", "berries", "piece of a key", "key", "special key", "note", "diamond"];
+// Item indexes: 0=sword, 1=berries, 2=keyPiece, 3=key, 4=special key, 5=note, 6=diamond
 // Item discovered status (used for inventory)
 global.item_known = [false, false, false, false, false, false, false, false, false, false];
 

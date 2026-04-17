@@ -63,11 +63,11 @@ if (!global.item_known[5])
 else
 	draw_text_ext_color(top_right_x - xpadding, top_right_y + ypadding,$"Notes: {global.item_array[5]}",line_height,text_width,c_white,c_white,c_white,c_white,image_alpha);
 
-//Item 7 (???)
+//Item 7 (diamond)
 if (!global.item_known[6])
 	draw_text_ext_color(top_right_x - xpadding,top_left_y + ypadding + 38,$"???: {global.item_array[6]}",line_height,text_width,c_white,c_white,c_white,c_white,image_alpha);
 else
-	draw_text_ext_color(top_right_x - xpadding, top_right_y + ypadding + 38,$"???: {global.item_array[6]}",line_height,text_width,c_white,c_white,c_white,c_white,image_alpha);
+	draw_text_ext_color(top_right_x - xpadding, top_right_y + ypadding + 38,$"Diamonds: {global.item_array[6]}",line_height,text_width,c_white,c_white,c_white,c_white,image_alpha);
 
 //Item 8 (???)
 if (!global.item_known[7])

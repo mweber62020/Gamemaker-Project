@@ -177,6 +177,40 @@ if (nearbyInteract)
 				iii.textToShow = "The chest is locked.";
 			}
 		}
+		
+		// If interact is a pedestal
+		if (nearbyInteract.object_index == obj_pedestal)
+		{
+			// Check if already placed item
+			if (!nearbyInteract.itemPlaced)
+			{
+				// Check if required item is in inventory
+				if (global.item_array[nearbyInteract.itemNeeded] >= 1)
+				{
+					// Makes chest appear, Show the textbox, set pedestalSuccess, and remove item from inventory.
+					var _chest = instance_create_depth(1024, 800, 0, obj_smallChest);
+					_chest.itemHeld = "special key";
+					
+					var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
+					iii.textToShow = nearbyInteract.successMessage;
+					
+					global.item_array[nearbyInteract.itemNeeded] -= 1;
+					nearbyInteract.itemPlaced = true;
+					
+					global.pedestalSuccess = true;
+					show_debug_message("global.pedestalSuccess is true!");
+					audio_play_sound(snd_success,1,0);
+				}
+				else {
+					var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
+					iii.textToShow = nearbyInteract.itemHint;
+				}
+			}
+			else{
+				var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
+				iii.textToShow = "You can't do anything else here.";
+			}
+		}
 	}
 }
 
@@ -266,39 +300,3 @@ if (nearbyNPC) {
 		show_debug_message("global.npcSuccess is true!");
 	}
 }
-	
-/*
-if (nearbyNPC)
-{
-	if (nearbyNPC.currentLine == 1) && (nearbyNPC.numLines >= 1)
-	//for (var i = 0; i < nearbyNPC.numLines; i += 1)
-	{
-		i = 0;
-		global.inConvo = true;
-		if (instance_exists(obj_textbox))
-		{
-			scr_npcTextControl(i)
-			_text = nearbyNPC.npcText;
-			iii.textToShow = _text;
-			show_debug_message(nearbyNPC.npcText);
-			//iterate nearbyNPC.currentLine somewhere and make a check for it up higher.
-		}
-		if (!instance_exists(obj_textbox))
-		{
-			scr_npcTextControl(i)
-			_text = nearbyNPC.npcText;
-			iii = instance_create_depth(obj_player.x, obj_player.y+155, -10000, obj_textbox);
-			iii.textToShow = _text;
-			show_debug_message(nearbyNPC.npcText);
-		}
-	}
-	show_debug_message(nearbyNPC.currentLine);
-	if (nearbyNPC.currentLine > nearbyNPC.numLines)
-	{
-		global.inConvo = false;
-		instance_destroy(obj_textbox)
-		global.playerControl = true;
-	}
-	nearbyNPC.currentLine += 1;
-}
-*/

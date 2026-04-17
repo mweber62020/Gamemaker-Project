@@ -1,6 +1,6 @@
 {
   "$GMProject":"v1",
-  "%Name":"The Legend of Grumpy v0.5",
+  "%Name":"The Legend of Grumpy v0.5.1",
   "AudioGroups":[
     {"$GMAudioGroup":"v1","%Name":"audiogroup_default","exportDir":"","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -64,7 +64,7 @@
   "MetaData":{
     "IDEVersion":"2024.14.4.222",
   },
-  "name":"The Legend of Grumpy v0.5",
+  "name":"The Legend of Grumpy v0.5.1",
   "resources":[
     {"id":{"name":"dialogue","path":"fonts/dialogue/dialogue.yy",},},
     {"id":{"name":"titleFont","path":"fonts/titleFont/titleFont.yy",},},
@@ -77,6 +77,7 @@
     {"id":{"name":"obj_block_slow","path":"objects/obj_block_slow/obj_block_slow.yy",},},
     {"id":{"name":"obj_blueLever3","path":"objects/obj_blueLever3/obj_blueLever3.yy",},},
     {"id":{"name":"obj_chest_display","path":"objects/obj_chest_display/obj_chest_display.yy",},},
+    {"id":{"name":"obj_diamond","path":"objects/obj_diamond/obj_diamond.yy",},},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
     {"id":{"name":"obj_fence_bottom_left_corner","path":"objects/obj_fence_bottom_left_corner/obj_fence_bottom_left_corner.yy",},},
     {"id":{"name":"obj_fence_bottom_right_corner","path":"objects/obj_fence_bottom_right_corner/obj_fence_bottom_right_corner.yy",},},
@@ -109,6 +110,7 @@
     {"id":{"name":"obj_par_obtainable","path":"objects/obj_par_obtainable/obj_par_obtainable.yy",},},
     {"id":{"name":"obj_par_pplate","path":"objects/obj_par_pplate/obj_par_pplate.yy",},},
     {"id":{"name":"obj_par_tpBlock","path":"objects/obj_par_tpBlock/obj_par_tpBlock.yy",},},
+    {"id":{"name":"obj_pedestal","path":"objects/obj_pedestal/obj_pedestal.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_pplate1","path":"objects/obj_pplate1/obj_pplate1.yy",},},
     {"id":{"name":"obj_pplate2","path":"objects/obj_pplate2/obj_pplate2.yy",},},
@@ -168,6 +170,7 @@
     {"id":{"name":"spr_blackBackground","path":"sprites/spr_blackBackground/spr_blackBackground.yy",},},
     {"id":{"name":"spr_blueLever_left","path":"sprites/spr_blueLever_left/spr_blueLever_left.yy",},},
     {"id":{"name":"spr_blueLever_right","path":"sprites/spr_blueLever_right/spr_blueLever_right.yy",},},
+    {"id":{"name":"spr_diamond","path":"sprites/spr_diamond/spr_diamond.yy",},},
     {"id":{"name":"spr_doorsAndWindows_1","path":"sprites/spr_doorsAndWindows_1/spr_doorsAndWindows_1.yy",},},
     {"id":{"name":"spr_doorsAndWindows","path":"sprites/spr_doorsAndWindows/spr_doorsAndWindows.yy",},},
     {"id":{"name":"spr_fence_bottom_left_corner","path":"sprites/spr_fence_bottom_left_corner/spr_fence_bottom_left_corner.yy",},},
@@ -212,6 +215,7 @@
     {"id":{"name":"spr_leverMask","path":"sprites/spr_leverMask/spr_leverMask.yy",},},
     {"id":{"name":"spr_lockBlock","path":"sprites/spr_lockBlock/spr_lockBlock.yy",},},
     {"id":{"name":"spr_note","path":"sprites/spr_note/spr_note.yy",},},
+    {"id":{"name":"spr_pedestal","path":"sprites/spr_pedestal/spr_pedestal.yy",},},
     {"id":{"name":"spr_plants","path":"sprites/spr_plants/spr_plants.yy",},},
     {"id":{"name":"spr_plateDown","path":"sprites/spr_plateDown/spr_plateDown.yy",},},
     {"id":{"name":"spr_plateUp","path":"sprites/spr_plateUp/spr_plateUp.yy",},},
@@ -238,7 +242,6 @@
     {"id":{"name":"spr_stoneTiles","path":"sprites/spr_stoneTiles/spr_stoneTiles.yy",},},
     {"id":{"name":"spr_switchHidden","path":"sprites/spr_switchHidden/spr_switchHidden.yy",},},
     {"id":{"name":"spr_sword","path":"sprites/spr_sword/spr_sword.yy",},},
-    {"id":{"name":"spr_temp","path":"sprites/spr_temp/spr_temp.yy",},},
     {"id":{"name":"spr_tempPerson","path":"sprites/spr_tempPerson/spr_tempPerson.yy",},},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
     {"id":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},},
