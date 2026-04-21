@@ -143,20 +143,19 @@ if (nearbyInteract)
 					}
 					return;
 				}
-				// Check if its coins and increment them
-				if (nearbyInteract.itemHeld == "coins")
+				
+				// Compares the element in the array to itemHeld
+				var _f = function (_element, _index) {
+					return (_element == nearbyInteract.itemHeld)
+				}
+				// Gets the index of itemHeld in item_names
+				var itemIndex = array_find_index(global.item_names, _f);
+				
+				// Increment and "discover" item
+				if (itemIndex == 99) // If item is coins
+					global.item_array[itemIndex] += 5;
+				else
 				{
-					global.coinCount += 5;
-					itemIndex = 99;
-				} else
-				{
-					// Compares the element in the array to itemHeld
-					var _f = function (_element, _index) {
-						return (_element == nearbyInteract.itemHeld)
-					}
-					// Gets the index of itemHeld in item_names
-					itemIndex = array_find_index(global.item_names, _f);
-					// Increment and "discover" item
 					global.item_array[itemIndex] += 1;
 					global.item_known[itemIndex] = true;
 				}
@@ -236,18 +235,17 @@ if (nearbyObtain)
 			addText = true;
 			noteContents = nearbyObtain.contents;
 		}
-		// Check if its coins and increment them.
-		if (nearbyObtain.object_index == obj_coinPile)
-		{
-			global.coinCount += 5;
-			global.playerControl = false;
-			instance_destroy(nearbyObtain);
-			return;
-		}
 		// Increment and "discover" item
-		global.item_array[nearbyObtain.arrayIndex] += 1;
-		global.item_known[nearbyObtain.arrayIndex] = true;
-		global.playerControl = false;
+		if (nearbyObtain.object_index == obj_coinPile) // If item is coins
+		{
+			global.item_array[nearbyObtain.arrayIndex] += 5;
+			global.playerControl = false;
+		}
+		else {
+			global.item_array[nearbyObtain.arrayIndex] += 1;
+			global.item_known[nearbyObtain.arrayIndex] = true;
+			global.playerControl = false;
+		}
 		//check if its the 3rd piece of a key and set variable to show additional text (near start of event)
 		if (nearbyObtain.object_index == obj_keyPiece)
 		{

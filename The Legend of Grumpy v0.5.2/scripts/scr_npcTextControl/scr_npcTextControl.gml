@@ -13,7 +13,7 @@ function scr_npcTextControl(nearbyNPC)
 	    {
 			show_debug_message("gave item");
 			if (nearbyNPC.itemToGive == 99)
-				global.coinCount += 5;
+				global.item_array[nearbyNPC.itemToGive] += 5;
 			else {
 		        global.item_array[nearbyNPC.itemToGive] += 1;
 		        global.item_known[nearbyNPC.itemToGive] = true;

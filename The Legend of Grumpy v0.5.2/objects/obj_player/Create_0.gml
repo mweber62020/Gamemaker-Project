@@ -44,7 +44,6 @@ lever_flag_two = false;
 
 // Chests
 chestSprite = noone;
-itemIndex = 0;
 
 // Pressure Plates
 pp_flag = false;

@@ -6,4 +6,4 @@ draw_set_colour(c_white);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_font(dialogue)
-draw_text(padding + sprite_get_width(spr_coinPile) + 12, 15, "= " + string(global.coinCount));
+draw_text(padding + sprite_get_width(spr_coinPile) + 12, 15, "= " + string(global.item_array[99]));
