@@ -64,7 +64,7 @@
   "MetaData":{
     "IDEVersion":"2024.14.4.222",
   },
-  "name":"The Legend of Grumpy v0.5.1",
+  "name":"The Legend of Grumpy v0.5.2",
   "resources":[
     {"id":{"name":"dialogue","path":"fonts/dialogue/dialogue.yy",},},
     {"id":{"name":"titleFont","path":"fonts/titleFont/titleFont.yy",},},
@@ -77,6 +77,7 @@
     {"id":{"name":"obj_block_slow","path":"objects/obj_block_slow/obj_block_slow.yy",},},
     {"id":{"name":"obj_blueLever3","path":"objects/obj_blueLever3/obj_blueLever3.yy",},},
     {"id":{"name":"obj_chest_display","path":"objects/obj_chest_display/obj_chest_display.yy",},},
+    {"id":{"name":"obj_coinPile","path":"objects/obj_coinPile/obj_coinPile.yy",},},
     {"id":{"name":"obj_diamond","path":"objects/obj_diamond/obj_diamond.yy",},},
     {"id":{"name":"obj_fade","path":"objects/obj_fade/obj_fade.yy",},},
     {"id":{"name":"obj_fence_bottom_left_corner","path":"objects/obj_fence_bottom_left_corner/obj_fence_bottom_left_corner.yy",},},
@@ -170,6 +171,7 @@
     {"id":{"name":"spr_blackBackground","path":"sprites/spr_blackBackground/spr_blackBackground.yy",},},
     {"id":{"name":"spr_blueLever_left","path":"sprites/spr_blueLever_left/spr_blueLever_left.yy",},},
     {"id":{"name":"spr_blueLever_right","path":"sprites/spr_blueLever_right/spr_blueLever_right.yy",},},
+    {"id":{"name":"spr_coinPile","path":"sprites/spr_coinPile/spr_coinPile.yy",},},
     {"id":{"name":"spr_diamond","path":"sprites/spr_diamond/spr_diamond.yy",},},
     {"id":{"name":"spr_doorsAndWindows_1","path":"sprites/spr_doorsAndWindows_1/spr_doorsAndWindows_1.yy",},},
     {"id":{"name":"spr_doorsAndWindows","path":"sprites/spr_doorsAndWindows/spr_doorsAndWindows.yy",},},

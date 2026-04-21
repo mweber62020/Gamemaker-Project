@@ -12,9 +12,13 @@ function scr_npcTextControl(nearbyNPC)
 		if (nearbyNPC.myState == npcState.itemGiven && !nearbyNPC.gaveItem && nearbyNPC.itemToGive != -1)
 	    {
 			show_debug_message("gave item");
-	        global.item_array[nearbyNPC.itemToGive] += 1;
-	        global.item_known[nearbyNPC.itemToGive] = true;
-	        nearbyNPC.gaveItem = true;
+			if (nearbyNPC.itemToGive == 99)
+				global.coinCount += 5;
+			else {
+		        global.item_array[nearbyNPC.itemToGive] += 1;
+		        global.item_known[nearbyNPC.itemToGive] = true;
+			}
+			nearbyNPC.gaveItem = true;
 	    }
 		
 		//if the npc is the "end game npc" then end the game.

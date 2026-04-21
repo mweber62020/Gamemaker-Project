@@ -143,19 +143,27 @@ if (nearbyInteract)
 					}
 					return;
 				}
-				// Compares the element in the array to itemHeld
-				var _f = function (_element, _index) {
-					return (_element == nearbyInteract.itemHeld)
+				// Check if its coins and increment them
+				if (nearbyInteract.itemHeld == "coins")
+				{
+					global.coinCount += 5;
+					itemIndex = 99;
+				} else
+				{
+					// Compares the element in the array to itemHeld
+					var _f = function (_element, _index) {
+						return (_element == nearbyInteract.itemHeld)
+					}
+					// Gets the index of itemHeld in item_names
+					itemIndex = array_find_index(global.item_names, _f);
+					// Increment and "discover" item
+					global.item_array[itemIndex] += 1;
+					global.item_known[itemIndex] = true;
 				}
-				// Gets the index of itemHeld in item_names
-				var itemIndex = array_find_index(global.item_names, _f);
-				// Increment and "discover" item
-				global.item_array[itemIndex] += 1;
-				global.item_known[itemIndex] = true;
 				// Shows sprite and text
 				nearbyInteract.sprite_index = chestSprite;
 				var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
-				if ((itemIndex == 1) || (itemIndex == 67)) // Put all indexes that would require different text here 67 is an example
+				if ((itemIndex == 1) || (itemIndex == 99)) // Put all indexes that would require different text here
 					iii.textToShow = $"You obtained some {nearbyInteract.itemHeld}"; // Might remove some
 				else
 					iii.textToShow = $"You obtained a {nearbyInteract.itemHeld}";
@@ -228,6 +236,14 @@ if (nearbyObtain)
 			addText = true;
 			noteContents = nearbyObtain.contents;
 		}
+		// Check if its coins and increment them.
+		if (nearbyObtain.object_index == obj_coinPile)
+		{
+			global.coinCount += 5;
+			global.playerControl = false;
+			instance_destroy(nearbyObtain);
+			return;
+		}
 		// Increment and "discover" item
 		global.item_array[nearbyObtain.arrayIndex] += 1;
 		global.item_known[nearbyObtain.arrayIndex] = true;
@@ -286,8 +302,11 @@ if (nearbyNPC) {
 	if ((nearbyNPC.gaveItem == true) && (!nearbyNPC.alreadyGave))
 	{
 		var iii = instance_create_depth(text_x, text_y, -10000, obj_textbox);
-		if ((nearbyNPC.itemToGive == 1) || (nearbyNPC.itemToGive == 67)) // Put all indexes that would require different text here 67 is an example
-			iii.textToShow = $"You obtained some {global.item_names[nearbyNPC.itemToGive]}"; // Might remove some
+		if ((nearbyNPC.itemToGive == 1) || (nearbyNPC.itemToGive == 99)) // Put all indexes that would require different text here
+			if (nearbyNPC.itemToGive == 99)
+				iii.textToShow = $"You obtained some coins";
+			else
+				iii.textToShow = $"You obtained some {global.item_names[nearbyNPC.itemToGive]}"; // Might remove some
 		else
 			iii.textToShow = $"You obtained a {global.item_names[nearbyNPC.itemToGive]}";
 		global.playerControl = false;
