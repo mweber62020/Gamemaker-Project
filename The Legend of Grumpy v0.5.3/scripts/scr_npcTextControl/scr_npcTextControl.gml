@@ -8,6 +8,12 @@ function scr_npcTextControl(nearbyNPC)
 		global.inConvo = false;
 		global.playerControl = true;
 		nearbyNPC.currentLine = 1;
+		// If player declined a choice, reset so they can be asked again next conversation
+		if (variable_instance_exists(nearbyNPC, "hasChoice") && nearbyNPC.hasChoice
+			&& nearbyNPC.myState == nearbyNPC.choiceNoState)
+		{
+			nearbyNPC.myState = nearbyNPC.choiceState;
+		}
 		//give item once convo over
 		if (nearbyNPC.myState == npcState.itemGiven && !nearbyNPC.gaveItem && nearbyNPC.itemToGive != -1)
 	    {
@@ -36,6 +42,19 @@ function scr_npcTextControl(nearbyNPC)
 	if (instance_exists(obj_inventory)) return;
 	// Sets the textToShow
 	iii.textToShow = nearbyNPC.npcText[nearbyNPC.myState][nearbyNPC.currentLine - 1];
-	// Increments the currentLine
-	nearbyNPC.currentLine += 1;	
+	
+	// If this line has a choice attached, activate choice mode and wait for input
+	if (variable_instance_exists(nearbyNPC, "hasChoice")
+		&& nearbyNPC.hasChoice
+		&& nearbyNPC.myState == nearbyNPC.choiceState
+		&& (nearbyNPC.currentLine - 1) == nearbyNPC.choiceLine)
+	{
+		iii.isChoice = true;
+		iii.choiceOptions = nearbyNPC.choiceOptions;
+		iii.choiceIndex = 0;
+	}
+	else
+	{
+		nearbyNPC.currentLine += 1;
+	}
 }

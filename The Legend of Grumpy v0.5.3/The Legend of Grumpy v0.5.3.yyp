@@ -64,7 +64,7 @@
   "MetaData":{
     "IDEVersion":"2024.14.4.222",
   },
-  "name":"The Legend of Grumpy v0.5.2",
+  "name":"The Legend of Grumpy v0.5.3",
   "resources":[
     {"id":{"name":"dialogue","path":"fonts/dialogue/dialogue.yy",},},
     {"id":{"name":"titleFont","path":"fonts/titleFont/titleFont.yy",},},
@@ -104,6 +104,7 @@
     {"id":{"name":"obj_npcBob1","path":"objects/obj_npcBob1/obj_npcBob1.yy",},},
     {"id":{"name":"obj_npcBob2","path":"objects/obj_npcBob2/obj_npcBob2.yy",},},
     {"id":{"name":"obj_npcBob3","path":"objects/obj_npcBob3/obj_npcBob3.yy",},},
+    {"id":{"name":"obj_npcBob4","path":"objects/obj_npcBob4/obj_npcBob4.yy",},},
     {"id":{"name":"obj_par_environment","path":"objects/obj_par_environment/obj_par_environment.yy",},},
     {"id":{"name":"obj_par_interact","path":"objects/obj_par_interact/obj_par_interact.yy",},},
     {"id":{"name":"obj_par_lever","path":"objects/obj_par_lever/obj_par_lever.yy",},},

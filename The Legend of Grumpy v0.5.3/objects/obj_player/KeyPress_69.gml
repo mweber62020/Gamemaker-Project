@@ -296,6 +296,24 @@ if (nearbyNPC) {
 		showingItemText = false;
         return;
     }
+	// If a choice is currently on screen, confirm the selection and branch
+	if (instance_exists(obj_textbox) && obj_textbox.isChoice)
+	{
+		if (obj_textbox.choiceIndex == 0) // Yes
+		{
+			if (variable_instance_exists(nearbyNPC, "choiceCoinReward") && nearbyNPC.choiceCoinReward > 0)
+				global.item_array[99] += nearbyNPC.choiceCoinReward;
+			nearbyNPC.myState = nearbyNPC.choiceYesState;
+		}
+		else // No
+		{
+			nearbyNPC.myState = nearbyNPC.choiceNoState;
+		}
+		nearbyNPC.currentLine = 1;
+		instance_destroy(obj_textbox);
+		scr_npcTextControl(nearbyNPC);
+		return;
+	}
 	scr_npcTextControl(nearbyNPC);
 	if ((nearbyNPC.gaveItem == true) && (!nearbyNPC.alreadyGave))
 	{

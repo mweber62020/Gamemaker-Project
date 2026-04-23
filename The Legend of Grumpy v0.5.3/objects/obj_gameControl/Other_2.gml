@@ -47,6 +47,9 @@ enum leverState {
 enum npcState {
 	itemWanted,
 	itemGiven,
+	choiceAsked,
+	choiceYes,
+	choiceNo,
 }
 
 curSeqLayer = noone;

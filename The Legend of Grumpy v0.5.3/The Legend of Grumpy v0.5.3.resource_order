@@ -76,6 +76,7 @@
     {"name":"obj_npcBob1","order":1,"path":"objects/obj_npcBob1/obj_npcBob1.yy",},
     {"name":"obj_npcBob2","order":2,"path":"objects/obj_npcBob2/obj_npcBob2.yy",},
     {"name":"obj_npcBob3","order":3,"path":"objects/obj_npcBob3/obj_npcBob3.yy",},
+    {"name":"obj_npcBob4","order":4,"path":"objects/obj_npcBob4/obj_npcBob4.yy",},
     {"name":"obj_par_environment","order":3,"path":"objects/obj_par_environment/obj_par_environment.yy",},
     {"name":"obj_par_obtainable","order":1,"path":"objects/obj_par_obtainable/obj_par_obtainable.yy",},
     {"name":"obj_par_pplate","order":1,"path":"objects/obj_par_pplate/obj_par_pplate.yy",},

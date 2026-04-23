@@ -425,6 +425,7 @@
     {"name":"inst_4542705C","path":"rooms/rm_hub/rm_hub.yy",},
     {"name":"inst_4371A114","path":"rooms/rm_hub/rm_hub.yy",},
     {"name":"inst_2F7AC0CB","path":"rooms/rm_hub/rm_hub.yy",},
+    {"name":"inst_48A98557","path":"rooms/rm_hub/rm_hub.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -904,6 +905,7 @@
         {"$GMRInstance":"v4","%Name":"inst_4542705C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4542705C","objectId":{"name":"obj_coinPile","path":"objects/obj_coinPile/obj_coinPile.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":896.0,"y":96.0,},
         {"$GMRInstance":"v4","%Name":"inst_4371A114","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4371A114","objectId":{"name":"obj_coinPile","path":"objects/obj_coinPile/obj_coinPile.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1376.0,"y":160.0,},
         {"$GMRInstance":"v4","%Name":"inst_2F7AC0CB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2F7AC0CB","objectId":{"name":"obj_coinPile","path":"objects/obj_coinPile/obj_coinPile.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1536.0,"y":736.0,},
+        {"$GMRInstance":"v4","%Name":"inst_48A98557","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_48A98557","objectId":{"name":"obj_npcBob4","path":"objects/obj_npcBob4/obj_npcBob4.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1056.0,"y":544.0,},
       ],"layers":[],"name":"Player_n_interactables","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Waterfalls","assets":[
         {"$GMRSpriteGraphic":"v1","%Name":"graphic_4D6356C7","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_4D6356C7","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_waterfall","path":"sprites/spr_waterfall/spr_waterfall.yy",},"x":512.0,"y":896.0,},
